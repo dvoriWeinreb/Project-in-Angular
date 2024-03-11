@@ -1,0 +1,5 @@
+<div *ngFor="let curs of curses let i=index" class="titleProducte">
+    <app-curs [curs]="curs" [i]="i" (e)="addCours($event)" (delete)="deleteCours($event)"></app-curs>
+</div>
+<div *ngFor="let c of listCurs">{{c}}</div>
+<button (click)="deleteAll()" class="button">לביטול כל הקורסים</button>
